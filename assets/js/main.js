@@ -41,7 +41,7 @@ function createActorCard(actor) {
       styles: { backgroundColor: stringToColour(actor.name) },
     },
     
-    document.createTextNode (actor.name[0])
+    document.createTextNode(getInitials(actor.name))
   );
   
   const divPhotoWrapper = createElement(

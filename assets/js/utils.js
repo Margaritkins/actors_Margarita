@@ -17,6 +17,11 @@ function stringToColour(str) {
   return colour;
 }
 
+function getInitials(arg){
+  const initials = arg.split(' ').map((arg)=> arg[0].toUpperCase());
+  return initials.join('');//if we need initials without space
+  // return initials.join(' ');//if we need initials with space
+}
 
 /**
  *
